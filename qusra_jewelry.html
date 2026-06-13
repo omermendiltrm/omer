@@ -1,1 +1,309 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قصرا للمجوهرات - Qusra Jewelry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #d4af37 0%, #c9a961 100%);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            color: #f0f0f0;
+            font-size: 1.1em;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #d4af37;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #d4af37;
+            padding-bottom: 10px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #d4af37 0%, #c9a961 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .product-info p {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .price {
+            color: #d4af37;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background-color: #d4af37;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #c9a961;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            nav a {
+                margin: 0 15px;
+                font-size: 0.95em;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>💍 قصرا للمجوهرات</h1>
+        <p>Qusra Jewelry - مجوهرات فاخرة وأنيقة</p>
+    </header>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#products">المنتجات</a>
+        <a href="#about">عن المتجر</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="section">
+            <h2>مرحباً بك في قصرا للمجوهرات</h2>
+            <p>نحن متخصصون في بيع المجوهرات الفاخرة والأنيقة بجودة عالية. تتميز منتجاتنا بالتصاميم العصرية والحرفية اليدوية الفريدة.</p>
+            <p>كل قطعة من قطعنا تمثل تحفة فنية تجمع بين الجمال والأناقة.</p>
+        </section>
+
+        <section id="products" class="section">
+            <h2>منتجاتنا</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">💎</div>
+                    <div class="product-info">
+                        <h3>خواتم ذهبية</h3>
+                        <p>خواتم ذهبية فاخرة بتصاميم عصرية وكلاسيكية</p>
+                        <div class="price">500 ريال</div>
+                        <button class="btn">أضف للسلة</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">👑</div>
+                    <div class="product-info">
+                        <h3>قلادات فضية</h3>
+                        <p>قلادات فضية ناعمة مع تفاصيل دقيقة</p>
+                        <div class="price">350 ريال</div>
+                        <button class="btn">أضف للسلة</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">✨</div>
+                    <div class="product-info">
+                        <h3>أساور براقة</h3>
+                        <p>أساور براقة مع أحجار كريمة حقيقية</p>
+                        <div class="price">650 ريال</div>
+                        <button class="btn">أضف للسلة</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🌟</div>
+                    <div class="product-info">
+                        <h3>أقراط فاخرة</h3>
+                        <p>أقراط فاخرة بتصاميم متنوعة وجذابة</p>
+                        <div class="price">400 ريال</div>
+                        <button class="btn">أضف للسلة</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">💫</div>
+                    <div class="product-info">
+                        <h3>مجموعات متكاملة</h3>
+                        <p>مجموعات مجوهرات متكاملة لجميع المناسبات</p>
+                        <div class="price">1200 ريال</div>
+                        <button class="btn">أضف للسلة</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🎁</div>
+                    <div class="product-info">
+                        <h3>هدايا خاصة</h3>
+                        <p>مجوهرات مُغلفة كهدايا خاصة وفاخرة</p>
+                        <div class="price">800 ريال</div>
+                        <button class="btn">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>عن متجرنا</h2>
+            <p>متجر قصرا للمجوهرات متخصص في بيع المجوهرات الفاخرة منذ أكثر من 20 سنة. نحن نقدم أعلى معايير الجودة وأفضل الأسعار لعملائنا الكرام.</p>
+            <p><strong>التزاماتنا:</strong></p>
+            <ul style="margin: 15px 0 0 20px; line-height: 1.8;">
+                <li>✅ جودة عالية مضمونة لجميع المنتجات</li>
+                <li>✅ أسعار تنافسية وعادلة</li>
+                <li>✅ خدمة عملاء متميزة</li>
+                <li>✅ ضمان أصلية المنتجات</li>
+                <li>✅ تغليف فاخر مجاني</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>اتصل بنا</h2>
+            <div class="contact-info">
+                <p><strong>📞 الهاتف:</strong> +966 50 XXXX XXXX</p>
+                <p><strong>📧 البريد الإلكتروني:</strong> info@qusrajewelry.com</p>
+                <p><strong>📍 الموقع:</strong> الرياض - المملكة العربية السعودية</p>
+                <p><strong>⏰ ساعات العمل:</strong> 09:00 صباحاً - 10:00 مساءً (يومياً)</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 قصرا للمجوهرات - جميع الحقوق محفوظة</p>
+        <p>Qusra Jewelry - All Rights Reserved</p>
+        <div class="contact-info">
+            <p>تابعنا على وسائل التواصل الاجتماعي</p>
+        </div>
+    </footer>
+</body>
+</html>
